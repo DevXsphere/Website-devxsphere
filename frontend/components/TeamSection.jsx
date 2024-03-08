@@ -11,7 +11,6 @@ export default function TeamSection() {
                 <h1 class="text-gray-900 text-4xl font-bold mb-8">
                   Meet the Team
                 </h1>
-
                 <p class="text-gray-700 text-lg font-light">
                   With over 100 years of combined experience, we've got a
                   well-seasoned team at the helm.
