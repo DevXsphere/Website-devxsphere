@@ -6,12 +6,15 @@ import Testimonials from "../components/Testimonials";
 import Cta from "../components/Cta";
 import Main from "../components/Main";
 import Events from "../components/Events"
+import Carousel from "../components/Carousel";
+
 
 export default function App() {
   return (
     <div>
       <Navbar />
-      <Main/>
+      <Carousel />
+      {/* <Main/> */}
       <Events />
       <TeamSection />
       <Testimonials />
