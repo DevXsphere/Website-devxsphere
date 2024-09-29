@@ -21,7 +21,7 @@ const Events = () => {
           <div className="font-bold text-lg md:text-xl my-2">
             Intro to React.js: Building Modern Web Apps
           </div>
-          <div className="flex items-center gap-2 text-gray-500 my-2">
+          <div className="flex items-center gap-2 text-white my-2">
             <IconCalendar /> June 15, 2023 <IconClock /> 6:30 PM - 8:30 PM
           </div>
           <div className="text-gray-600 text-sm md:text-base my-4">
@@ -42,7 +42,7 @@ const Events = () => {
           <div className="font-bold text-lg md:text-xl my-2">
             Advanced React.js Workshop: State Management & Performance
           </div>
-          <div className="flex items-center gap-2 text-gray-500 my-2">
+          <div className="flex items-center gap-2 text-white my-2">
             <IconCalendar /> July 10, 2023 <IconClock /> 5:00 PM - 7:00 PM
           </div>
           <div className="text-gray-600 text-sm md:text-base my-4">

@@ -1,164 +1,86 @@
 import React from "react";
+import { Swiper, SwiperSlide } from "swiper/react"; // Swiper import
+import "swiper/css"; // Swiper CSS import
 
 export default function Testimonials() {
   return (
-  <div class="container my-24 mx-auto md:px-6">
-    <section class="mb-32 text-center">
-      <h2 class="mb-12 text-3xl font-bold">Testimonials</h2>
+    <div className="container mx-auto md:px-6">
+      <section className="mb-32 text-center">
+        <h2 className="mb-12 text-3xl font-bold">Testimonials</h2>
+        <Swiper
+          spaceBetween={20}          // Space between each card
+          slidesPerView={3}           // 3 slides visible on desktop
+          breakpoints={{
+            640: { slidesPerView: 1 }, // 1 slide for small screens
+            1024: { slidesPerView: 3 }, // 3 slides for large screens
+            1440: { slidesPerView: 4 }  // 4 slides for extra-large screens
+          }}
+        >
+          {/* Testimonial 1 */}
+          <SwiperSlide>
+            <div className="flex flex-col items-center bg-white p-6 rounded-lg shadow-lg h-64 w-72">
+              <img
+                src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(1).jpg"
+                className="w-16 h-16 rounded-full mb-4"
+                alt="User"
+              />
+              <h5 className="mb-2 text-lg font-bold">Maria Smantha</h5>
+              <h6 className="mb-4 font-medium text-primary">Web Developer</h6>
+              <p className="text-gray-600 text-sm">
+                "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eos id officiis hic tenetur quae quaerat ad velit ab hic."
+              </p>
+            </div>
+          </SwiperSlide>
 
-    <div class="grid gap-x-6 md:grid-cols-3 lg:gap-x-12">
-      <div class="mb-12 md:mb-0">
-        <div class="mb-6 flex justify-center">
-          <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(1).jpg"
-            class="w-32 rounded-full shadow-lg dark:shadow-black/20" />
-        </div>
-        <h5 class="mb-2 text-lg font-bold">Maria Smantha</h5>
-        <h6 class="mb-4 font-medium text-primary dark:text-primary-400">
-          Web Developer
-        </h6>
-        <p class="mb-4">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eos
-          id officiis hic tenetur quae quaerat ad velit ab hic.
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 96 960 960" class="inline-block w-6">
-            <path fill="currentColor"
-              d="M580 556h160V396H580v160Zm-360 0h160V396H220v160Zm406 220 80-160H520V336h280v288l-76 152h-98Zm-360 0 80-160H160V336h280v288l-76 152h-98Zm34-300Zm360 0Z" />
-          </svg>
-        </p>
-        <ul class="mb-0 flex justify-center">
-          <li>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 96 960 960" class="w-5 text-warning">
-              <path fill="currentColor"
-                d="m233 976 65-281L80 506l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z" />
-            </svg>
-          </li>
-          <li>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 96 960 960" class="w-5 text-warning">
-              <path fill="currentColor"
-                d="m233 976 65-281L80 506l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z" />
-            </svg>
-          </li>
-          <li>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 96 960 960" class="w-5 text-warning">
-              <path fill="currentColor"
-                d="m233 976 65-281L80 506l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z" />
-            </svg>
-          </li>
-          <li>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 96 960 960" class="w-5 text-warning">
-              <path fill="currentColor"
-                d="m233 976 65-281L80 506l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z" />
-            </svg>
-          </li>
-          <li>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 96 960 960" class="w-5 text-warning">
-              <path fill="currentColor"
-                d="m480 757 157 95-42-178 138-120-182-16-71-168v387ZM233 976l65-281L80 506l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z" />
-            </svg>
-          </li>
-        </ul>
-      </div>
-      <div class="mb-12 md:mb-0">
-        <div class="mb-6 flex justify-center">
-          <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(2).jpg"
-            class="w-32 rounded-full shadow-lg dark:shadow-black/20" />
-        </div>
-        <h5 class="mb-2 text-lg font-bold">Lisa Cudrow</h5>
-        <h6 class="mb-4 font-medium text-primary dark:text-primary-400">
-          Graphic Designer
-        </h6>
-        <p class="mb-4">
-          Ut enim ad minima veniam, quis nostrum exercitationem ullam
-          corporis suscipit laboriosam, nisi ut aliquid commodi.
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 96 960 960" class="inline-block w-6">
-            <path fill="currentColor"
-              d="M580 556h160V396H580v160Zm-360 0h160V396H220v160Zm406 220 80-160H520V336h280v288l-76 152h-98Zm-360 0 80-160H160V336h280v288l-76 152h-98Zm34-300Zm360 0Z" />
-          </svg>
-        </p>
-        <ul class="mb-0 flex justify-center">
-          <li>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 96 960 960" class="w-5 text-warning">
-              <path fill="currentColor"
-                d="m233 976 65-281L80 506l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z" />
-            </svg>
-          </li>
-          <li>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 96 960 960" class="w-5 text-warning">
-              <path fill="currentColor"
-                d="m233 976 65-281L80 506l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z" />
-            </svg>
-          </li>
-          <li>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 96 960 960" class="w-5 text-warning">
-              <path fill="currentColor"
-                d="m233 976 65-281L80 506l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z" />
-            </svg>
-          </li>
-          <li>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 96 960 960" class="w-5 text-warning">
-              <path fill="currentColor"
-                d="m233 976 65-281L80 506l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z" />
-            </svg>
-          </li>
-          <li>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 96 960 960" class="w-5 text-warning">
-              <path fill="currentColor"
-                d="m233 976 65-281L80 506l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z" />
-            </svg>
-          </li>
-        </ul>
-      </div>
-      <div class="mb-0">
-        <div class="mb-6 flex justify-center">
-          <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(9).jpg"
-            class="w-32 rounded-full shadow-lg dark:shadow-black/20" />
-        </div>
-        <h5 class="mb-2 text-lg font-bold">John Smith</h5>
-        <h6 class="mb-4 font-medium text-primary dark:text-primary-400">
-          Marketing Specialist
-        </h6>
-        <p class="mb-4">
-          At vero eos et accusamus et iusto odio dignissimos ducimus qui
-          blanditiis praesentium voluptatum deleniti atque corrupti.
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 96 960 960" class="inline-block w-6">
-            <path fill="currentColor"
-              d="M580 556h160V396H580v160Zm-360 0h160V396H220v160Zm406 220 80-160H520V336h280v288l-76 152h-98Zm-360 0 80-160H160V336h280v288l-76 152h-98Zm34-300Zm360 0Z" />
-          </svg>
-        </p>
-        <ul class="mb-0 flex justify-center">
-          <li>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 96 960 960" class="w-5 text-warning">
-              <path fill="currentColor"
-                d="m233 976 65-281L80 506l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z" />
-            </svg>
-          </li>
-          <li>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 96 960 960" class="w-5 text-warning">
-              <path fill="currentColor"
-                d="m233 976 65-281L80 506l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z" />
-            </svg>
-          </li>
-          <li>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 96 960 960" class="w-5 text-warning">
-              <path fill="currentColor"
-                d="m233 976 65-281L80 506l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z" />
-            </svg>
-          </li>
-          <li>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 96 960 960" class="w-5 text-warning">
-              <path fill="currentColor"
-                d="m233 976 65-281L80 506l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Z" />
-            </svg>
-          </li>
-          <li>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 96 960 960" class="w-5 text-warning">
-              <path fill="currentColor"
-                d="m323 851 157-94 157 95-42-178 138-120-182-16-71-168-71 167-182 16 138 120-42 178Zm-90 125 65-281L80 506l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Zm247-355Z" />
-            </svg>
-          </li>
-        </ul>
-      </div>
+          {/* Testimonial 2 */}
+          <SwiperSlide>
+            <div className="flex flex-col items-center bg-white p-6 rounded-lg shadow-lg h-64 w-72">
+              <img
+                src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(2).jpg"
+                className="w-16 h-16 rounded-full mb-4"
+                alt="User"
+              />
+              <h5 className="mb-2 text-lg font-bold">Lisa Cudrow</h5>
+              <h6 className="mb-4 font-medium text-primary">Graphic Designer</h6>
+              <p className="text-gray-600 text-sm">
+                "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid commodi."
+              </p>
+            </div>
+          </SwiperSlide>
+
+          {/* Testimonial 3 */}
+          <SwiperSlide>
+            <div className="flex flex-col items-center bg-white p-6 rounded-lg shadow-lg h-64 w-72">
+              <img
+                src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(9).jpg"
+                className="w-16 h-16 rounded-full mb-4"
+                alt="User"
+              />
+              <h5 className="mb-2 text-lg font-bold">John Smith</h5>
+              <h6 className="mb-4 font-medium text-primary">Marketing Specialist</h6>
+              <p className="text-gray-600 text-sm">
+                "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti."
+              </p>
+            </div>
+          </SwiperSlide>
+
+          {/* Testimonial 4 */}
+          <SwiperSlide>
+            <div className="flex flex-col items-center bg-white p-6 rounded-lg shadow-lg h-64 w-72">
+              <img
+                src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(10).jpg"
+                className="w-16 h-16 rounded-full mb-4"
+                alt="User"
+              />
+              <h5 className="mb-2 text-lg font-bold">Anna Lee</h5>
+              <h6 className="mb-4 font-medium text-primary">Project Manager</h6>
+              <p className="text-gray-600 text-sm">
+                "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+              </p>
+            </div>
+          </SwiperSlide>
+        </Swiper>
+      </section>
     </div>
-  </section>
-</div>
   );
 }
