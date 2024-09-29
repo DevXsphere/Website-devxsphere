@@ -29,7 +29,7 @@ function Main() {
             </a>
             <a
               href="#"
-              className="text-sm font-semibold leading-6 text-gray-900"
+              className="text-sm font-semibold leading-6 text-white"
             >
               Discover Resources <span aria-hidden="true">→</span>
             </a>
