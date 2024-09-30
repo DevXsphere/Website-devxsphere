@@ -10,10 +10,10 @@ export default function TeamSection() {
           <div class="container max-w-7xl px-4">
             <div class="flex flex-wrap justify-center text-center mb-24">
               <div class="w-full lg:w-6/12 px-4">
-                <h1 class="text-white text-4xl font-bold mb-8"> {/* Text color to white */}
+                <h1 class=" text-4xl font-bold mb-8"> {/* Text color to white */}
                   Meet the Team
                 </h1>
-                <p class="text-gray-300 text-lg font-light"> {/* Text color to light gray */}
+                <p class="dark:text-gray-300 text-lg font-light"> {/* Text color to light gray */}
                   With over 100 years of combined experience, we've got a well-seasoned team at the helm.
                 </p>
               </div>
@@ -41,7 +41,7 @@ export default function TeamSection() {
                     />
                   </a>
                   <div class="text-center mt-6">
-                    <h1 class="text-white text-xl font-bold mb-1"> {/* Text color to white */}
+                    <h1 class="dark:text-white text-xl font-bold mb-1"> {/* Text color to white */}
                       Utkarsh Upadhyay
                     </h1>
                     <div class="text-gray-400 font-light mb-2"> {/* Text color to light gray */}
@@ -72,7 +72,7 @@ export default function TeamSection() {
                     />
                   </a>
                   <div class="text-center mt-6">
-                    <h1 class="text-white text-xl font-bold mb-1">Saurabh Upadhyay</h1>
+                    <h1 class="dark:text-white text-xl font-bold mb-1">Saurabh Upadhyay</h1>
                     <div class="text-gray-400 font-light mb-2">Founder & outreach</div>
                     <div class="flex items-center justify-center opacity-50 hover:opacity-100 transition-opacity duration-300">
                       <a href="#" class="flex rounded-full hover:bg-indigo-700 h-10 w-10">
@@ -100,7 +100,7 @@ export default function TeamSection() {
                     />
                   </a>
                   <div class="text-center mt-6">
-                    <h1 class="text-white text-xl font-bold mb-1">Abhishek Sharma</h1>
+                    <h1 class="dark:text-white text-xl font-bold mb-1">Abhishek Sharma</h1>
                     <div class="text-gray-400 font-light mb-2">Web lead</div>
                     <div class="flex items-center justify-center opacity-50 hover:opacity-100 transition-opacity duration-300">
                       <a href="https://www.linkedin.com/in/abhishek-sharma-655182215/" target="_blank" class="flex rounded-full hover:bg-indigo-700 h-10 w-10">

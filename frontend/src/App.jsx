@@ -10,7 +10,7 @@ import Carousel from "../components/Carousel";
 
 export default function App() {
   return (
-    <div>
+    <div className=" bg-white dark:bg-darkBackground dark:text-white">
       <Navbar />
       <Carousel />
       {/* <Main/> */}
