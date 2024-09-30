@@ -36,7 +36,7 @@ export default function TeamSection() {
                   <a href="#" class="mx-auto">
                     <img
                       class="rounded-2xl drop-shadow-md hover:drop-shadow-xl transition-all duration-200 delay-100 w-64 h-64 object-cover" // Fixed image size
-                      src="\public\Team\pfp speakerone.jpeg"
+                      src="/Team/pfp speakerone.jpeg"
                       alt="Team Member"
                     />
                   </a>
@@ -103,13 +103,13 @@ export default function TeamSection() {
                     <h1 class="text-white text-xl font-bold mb-1">Abhishek Sharma</h1>
                     <div class="text-gray-400 font-light mb-2">Web lead</div>
                     <div class="flex items-center justify-center opacity-50 hover:opacity-100 transition-opacity duration-300">
-                      <a href="#" class="flex rounded-full hover:bg-indigo-700 h-10 w-10">
+                      <a href="https://www.linkedin.com/in/abhishek-sharma-655182215/" target="_blank" class="flex rounded-full hover:bg-indigo-700 h-10 w-10">
                         <i class="mdi mdi-linkedin text-indigo-700 mx-auto mt-2"></i>
                       </a>
-                      <a href="#" class="flex rounded-full hover:bg-blue-700 h-10 w-10">
+                      <a href="https://x.com/As0755213Sharma" target="_blank" class="flex rounded-full hover:bg-blue-700 h-10 w-10">
                         <i class="mdi mdi-twitter text-blue-400 mx-auto mt-2"></i>
                       </a>
-                      <a href="#" class="flex rounded-full hover:bg-orange-700 h-10 w-10">
+                      <a href="https://www.instagram.com/abhi.navsharma_/" target="_blank" class="flex rounded-full hover:bg-orange-700 h-10 w-10">
                         <i class="mdi mdi-instagram text-orange-400 mx-auto mt-2"></i>
                       </a>
                     </div>
@@ -123,7 +123,7 @@ export default function TeamSection() {
                   <a href="#" class="mx-auto">
                     <img
                       class="rounded-2xl drop-shadow-md hover:drop-shadow-xl transition-all duration-200 delay-100 w-64 h-64 object-cover"
-                      src="\public\Team\Aakash Mahajan.png"
+                      src="/Team/Aakash Mahajan.png"
                       alt="Team Member"
                     />
                   </a>
@@ -150,7 +150,7 @@ export default function TeamSection() {
                   <a href="#" class="mx-auto">
                     <img
                       class="rounded-2xl drop-shadow-md hover:drop-shadow-xl transition-all duration-200 delay-100 w-64 h-64 object-cover"
-                      src="\public\Team\RAJVEER SINGH.jpg"
+                      src="/Team/RAJVEER SINGH.jpg"
                       alt="Team Member"
                     />
                   </a>
@@ -177,7 +177,7 @@ export default function TeamSection() {
                   <a href="#" class="mx-auto">
                     <img
                       class="rounded-2xl drop-shadow-md hover:drop-shadow-xl transition-all duration-200 delay-100 w-64 h-64 object-cover"
-                      src="\public\Team\Ashika Gupta.png"
+                      src="/Team/Ashika Gupta.png"
                       alt="Team Member"
                     />
                   </a>
@@ -204,7 +204,7 @@ export default function TeamSection() {
                   <a href="#" class="mx-auto">
                     <img
                       class="rounded-2xl drop-shadow-md hover:drop-shadow-xl transition-all duration-200 delay-100 w-64 h-64 object-cover"
-                      src="\public\Team\Kusum Kharayat.jpg"
+                      src="/Team/Kusum Kharayat.jpg"
                       alt="Team Member"
                     />
                   </a>
@@ -231,7 +231,7 @@ export default function TeamSection() {
                   <a href="#" class="mx-auto">
                     <img
                       class="rounded-2xl drop-shadow-md hover:drop-shadow-xl transition-all duration-200 delay-100 w-64 h-64 object-cover"
-                      src="\public\Team\YASHDEEP SINGH.jpg"
+                      src="/Team/YASHDEEP SINGH.jpg"
                       alt="Team Member"
                     />
                   </a>
@@ -258,7 +258,7 @@ export default function TeamSection() {
                   <a href="#" class="mx-auto">
                     <img
                       class="rounded-2xl drop-shadow-md hover:drop-shadow-xl transition-all duration-200 delay-100 w-64 h-64 object-cover"
-                      src="\public\Team\vanshika goel.jpeg"
+                      src="/Team/vanshika goel.jpeg"
                       alt="Team Member"
                     />
                   </a>
