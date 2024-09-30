@@ -95,7 +95,7 @@ export default function TeamSection() {
                   <a href="#" class="mx-auto">
                     <img
                       class="rounded-2xl drop-shadow-md hover:drop-shadow-xl transition-all duration-200 delay-100 w-64 h-64 object-cover"
-                      src="\public\Team\Abhishek Sharma.jpg"
+                      src="/Team/Abhishek Sharma.jpg"
                       alt="Team Member"
                     />
                   </a>
