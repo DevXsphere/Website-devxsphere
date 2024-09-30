@@ -60,5 +60,12 @@ git push origin <branch_name> # this will push your changes to your github repo
 - We are waiting for your pull request.
 - You can always have discussions regarding posting tweets on the [Discord Channel](https:)
 
-<a href = "https://github.com/DevXsphere/Website-devxsphere/graphs/contributors">
+## 📈 Contributors
+
+Thanks to all the wonderful contributors who have helped make this repository better! 🙌
+
+<a href="https://github.com/DevXsphere/Website-devxsphere/graphs/contributors">
+   <img src="https://contrib.rocks/image?repo=DevXsphere/Website-devxsphere" />
 </a>
+
+###### *We will do our best to merge as much as possible from everyone. However, time is limited and the merge conflicts are horrible :astonished: <3*
