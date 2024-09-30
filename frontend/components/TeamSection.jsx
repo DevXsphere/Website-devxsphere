@@ -1,286 +1,155 @@
 import React from "react";
-import { Swiper, SwiperSlide } from "swiper/react"; // Swiper import
-import "swiper/css"; // Swiper CSS import
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
 
-export default function TeamSection() {
+
+// Team data array
+const teamData = [
+  {
+    name: "Utkarsh Upadhyay",
+    position: "Founder & Lead",
+    imgSrc: "/Team/pfp speakerone.jpeg",
+    linkedin: "https://www.linkedin.com/in/utk2103/",
+    twitter: "https://x.com/utk2103",
+    instagram: "https://instagram.com/utkarsh_k21",
+  },
+  {
+    name: "Saurabh Upadhyay",
+    position: "Founder & outreach",
+    imgSrc: "public/Team/Saurabh.png",
+    linkedin: "https://www.linkedin.com",
+    twitter: "https://x.com",
+    instagram: "https://instagram.com",
+  },
+  {
+    name: "Abhishek Sharma",
+    position: "Web lead",
+    imgSrc: "/Team/Abhishek Sharma.jpg",
+    linkedin: "https://www.linkedin.com/",
+    twitter: "https://x.com",
+    instagram: "https://instagram.com",
+  },
+  {
+    name: "Aakash Mahajan",
+    position: "Web dev contributer",
+    imgSrc: "/Team/Aakash Mahajan.png",
+    linkedin: "https://www.linkedin.com/",
+    twitter: "https://x.com",
+    instagram: "https://instagram.com",
+  },
+  {
+    name: "Rajveer Singh",
+    position: "Community advocate",
+    imgSrc: "/Team/RAJVEER SINGH.jpg",
+    linkedin: "https://www.linkedin.com/",
+    twitter: "https://x.com",
+    instagram: "https://instagram.com",
+  },
+  {
+    name: "Ashika Gupta",
+    position: "UI/UX team",
+    imgSrc: "/Team/Ashika Gupta.png",
+    linkedin: "https://www.linkedin.com/",
+    twitter: "https://x.com",
+    instagram: "https://instagram.com",
+  },
+  {
+    name: "Kusum Kharayat",
+    position: "Community advocate",
+    imgSrc: "/Team/Kusum Kharayat.jpg",
+    linkedin: "https://www.linkedin.com/",
+    twitter: "https://x.com",
+    instagram: "https://instagram.com",
+  },
+  {
+    name: "Yashdeep Singh",
+    position: "Social media",
+    imgSrc: "/Team/YASHDEEP SINGH.jpg",
+    linkedin: "https://www.linkedin.com/",
+    twitter: "https://x.com",
+    instagram: "https://instagram.com",
+  },
+  {
+    name: "Vanshika Goelt",
+    position: "PR and social media",
+    imgSrc: "/Team/vanshika goel.jpeg",
+    linkedin: "https://www.linkedin.com/",
+    twitter: "https://x.com",
+    instagram: "https://instagram.com",
+  },
+  // Add more team members as needed...
+];
+
+export default function ImprovedTeamSection() {
   return (
-    <div class="flex flex-col w-full my-12 px-4 md:px-12 lg:px-24"> {/* Changed background to dark */}
-      <div class="flex flex-col">
-        <div class="flex flex-col mt-8">
-          <div class="container max-w-7xl px-4">
-            <div class="flex flex-wrap justify-center text-center mb-24">
-              <div class="w-full lg:w-6/12 px-4">
-                <h1 class="text-white text-4xl font-bold mb-8"> {/* Text color to white */}
-                  Meet the Team
-                </h1>
-                <p class="text-gray-300 text-lg font-light"> {/* Text color to light gray */}
-                  With over 100 years of combined experience, we've got a well-seasoned team at the helm.
+    <div className="flex flex-col w-full my-12 px-4 md:px-12 lg:px-24">
+      <div className="flex flex-col">
+        <div className="flex flex-col mt-8">
+          <div className="container max-w-7xl px-4">
+            {/* Section Title */}
+            <div className="flex flex-wrap justify-center text-center mb-16">
+              <div className="w-full lg:w-6/12 px-4">
+                <h1 className="text-white text-4xl font-bold mb-4">Meet Our Team</h1>
+                <p className="text-gray-300 text-lg font-light">
+                  A group of skilled professionals committed to delivering the best.
                 </p>
               </div>
             </div>
 
             {/* Swiper Section */}
             <Swiper
-              spaceBetween={50}
-              slidesPerView={3} // Adjust number of visible slides based on screen size
+            
+              spaceBetween={30}
+              slidesPerView={1}
               breakpoints={{
                 640: { slidesPerView: 1 }, // 1 slide on small screens
                 768: { slidesPerView: 2 }, // 2 slides on medium screens
                 1024: { slidesPerView: 3 }, // 3 slides on large screens
+                1280: { slidesPerView: 4 }, // 4 slides on extra-large screens
               }}
               pagination={{ clickable: true }}
             >
-              {/* Team member 1 */}
-              <SwiperSlide>
-                <div class="flex flex-col">
-                  <a href="#" class="mx-auto">
+              {teamData.map((member, index) => (
+                <SwiperSlide key={index}>
+                  <div className="flex flex-col items-center bg-gray-900 rounded-3xl p-6 transition transform hover:-translate-y-2 hover:shadow-xl duration-300">
                     <img
-                      class="rounded-2xl drop-shadow-md hover:drop-shadow-xl transition-all duration-200 delay-100 w-64 h-64 object-cover" // Fixed image size
-                      src="/Team/pfp speakerone.jpeg"
-                      alt="Team Member"
+                      className="rounded-full w-32 h-32 object-cover border-4 border-gray-700 shadow-lg"
+                      src={member.imgSrc}
+                      alt={member.name}
                     />
-                  </a>
-                  <div class="text-center mt-6">
-                    <h1 class="text-white text-xl font-bold mb-1"> {/* Text color to white */}
-                      Utkarsh Upadhyay
-                    </h1>
-                    <div class="text-gray-400 font-light mb-2"> {/* Text color to light gray */}
-                      Founder & lead
+                    <div className="text-center mt-4">
+                      <h1 className="text-white text-xl font-semibold">{member.name}</h1>
+                      <p className="text-gray-400 font-light">{member.position}</p>
                     </div>
-                    <div class="flex items-center justify-center opacity-50 hover:opacity-100 transition-opacity duration-300">
-                      <a href="https://www.linkedin.com/in/utk2103/" class="flex rounded-full hover:bg-indigo-700 h-10 w-10">
-                        <i class="mdi mdi-linkedin text-indigo-400 mx-auto mt-2"></i>
+                    <div className="flex justify-center mt-4 space-x-4">
+                      <a
+                        href={member.linkedin}
+                        className="text-indigo-400 hover:text-indigo-600 transition-colors"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <i className="mdi mdi-linkedin text-2xl"></i>
                       </a>
-                      <a href="https://x.com/utk2103" class="flex rounded-full hover:bg-blue-700 h-10 w-10">
-                        <i class="mdi mdi-twitter text-blue-300 mx-auto mt-2"></i>
+                      <a
+                        href={member.twitter}
+                        className="text-blue-300 hover:text-blue-500 transition-colors"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <i className="mdi mdi-twitter text-2xl"></i>
                       </a>
-                      <a href="https://instagram.com/utkarsh_k21" class="flex rounded-full hover:bg-orange-700 h-10 w-10">
-                        <i class="mdi mdi-instagram text-orange-400 mx-auto mt-2"></i>
+                      <a
+                        href={member.instagram}
+                        className="text-orange-400 hover:text-orange-600 transition-colors"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <i className="mdi mdi-instagram text-2xl"></i>
                       </a>
                     </div>
                   </div>
-                </div>
-              </SwiperSlide>
-
-              <SwiperSlide>
-                <div class="flex flex-col">
-                  <a href="#" class="mx-auto">
-                    <img
-                      class="rounded-2xl drop-shadow-md hover:drop-shadow-xl transition-all duration-200 delay-100 w-64 h-64 object-cover"
-                      src="public\Team\Saurabh.png"
-                      alt="Team Member"
-                    />
-                  </a>
-                  <div class="text-center mt-6">
-                    <h1 class="text-white text-xl font-bold mb-1">Saurabh Upadhyay</h1>
-                    <div class="text-gray-400 font-light mb-2">Founder & outreach</div>
-                    <div class="flex items-center justify-center opacity-50 hover:opacity-100 transition-opacity duration-300">
-                      <a href="#" class="flex rounded-full hover:bg-indigo-700 h-10 w-10">
-                        <i class="mdi mdi-linkedin text-indigo-700 mx-auto mt-2"></i>
-                      </a>
-                      <a href="#" class="flex rounded-full hover:bg-blue-700 h-10 w-10">
-                        <i class="mdi mdi-twitter text-blue-400 mx-auto mt-2"></i>
-                      </a>
-                      <a href="#" class="flex rounded-full hover:bg-orange-700 h-10 w-10">
-                        <i class="mdi mdi-instagram text-orange-400 mx-auto mt-2"></i>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </SwiperSlide>
-
-              {/* Team member 2 */}
-              <SwiperSlide>
-                <div class="flex flex-col">
-                  <a href="#" class="mx-auto">
-                    <img
-                      class="rounded-2xl drop-shadow-md hover:drop-shadow-xl transition-all duration-200 delay-100 w-64 h-64 object-cover"
-                      src="/Team/Abhishek Sharma.jpg"
-                      alt="Team Member"
-                    />
-                  </a>
-                  <div class="text-center mt-6">
-                    <h1 class="text-white text-xl font-bold mb-1">Abhishek Sharma</h1>
-                    <div class="text-gray-400 font-light mb-2">Web lead</div>
-                    <div class="flex items-center justify-center opacity-50 hover:opacity-100 transition-opacity duration-300">
-                      <a href="https://www.linkedin.com/in/abhishek-sharma-655182215/" target="_blank" class="flex rounded-full hover:bg-indigo-700 h-10 w-10">
-                        <i class="mdi mdi-linkedin text-indigo-700 mx-auto mt-2"></i>
-                      </a>
-                      <a href="https://x.com/As0755213Sharma" target="_blank" class="flex rounded-full hover:bg-blue-700 h-10 w-10">
-                        <i class="mdi mdi-twitter text-blue-400 mx-auto mt-2"></i>
-                      </a>
-                      <a href="https://www.instagram.com/abhi.navsharma_/" target="_blank" class="flex rounded-full hover:bg-orange-700 h-10 w-10">
-                        <i class="mdi mdi-instagram text-orange-400 mx-auto mt-2"></i>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </SwiperSlide>
-
-              {/* Additional team members can be added here */}
-              <SwiperSlide>
-                <div class="flex flex-col">
-                  <a href="#" class="mx-auto">
-                    <img
-                      class="rounded-2xl drop-shadow-md hover:drop-shadow-xl transition-all duration-200 delay-100 w-64 h-64 object-cover"
-                      src="/Team/Aakash Mahajan.png"
-                      alt="Team Member"
-                    />
-                  </a>
-                  <div class="text-center mt-6">
-                    <h1 class="text-white text-xl font-bold mb-1">Aakash Mahajan</h1>
-                    <div class="text-gray-400 font-light mb-2">Web dev contributer</div>
-                    <div class="flex items-center justify-center opacity-50 hover:opacity-100 transition-opacity duration-300">
-                      <a href="#" class="flex rounded-full hover:bg-indigo-700 h-10 w-10">
-                        <i class="mdi mdi-linkedin text-indigo-700 mx-auto mt-2"></i>
-                      </a>
-                      <a href="#" class="flex rounded-full hover:bg-blue-700 h-10 w-10">
-                        <i class="mdi mdi-twitter text-blue-400 mx-auto mt-2"></i>
-                      </a>
-                      <a href="#" class="flex rounded-full hover:bg-orange-700 h-10 w-10">
-                        <i class="mdi mdi-instagram text-orange-400 mx-auto mt-2"></i>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </SwiperSlide>
-
-              <SwiperSlide>
-                <div class="flex flex-col">
-                  <a href="#" class="mx-auto">
-                    <img
-                      class="rounded-2xl drop-shadow-md hover:drop-shadow-xl transition-all duration-200 delay-100 w-64 h-64 object-cover"
-                      src="/Team/RAJVEER SINGH.jpg"
-                      alt="Team Member"
-                    />
-                  </a>
-                  <div class="text-center mt-6">
-                    <h1 class="text-white text-xl font-bold mb-1">Rajveer Singh</h1>
-                    <div class="text-gray-400 font-light mb-2">Community advocate</div>
-                    <div class="flex items-center justify-center opacity-50 hover:opacity-100 transition-opacity duration-300">
-                      <a href="#" class="flex rounded-full hover:bg-indigo-700 h-10 w-10">
-                        <i class="mdi mdi-linkedin text-indigo-700 mx-auto mt-2"></i>
-                      </a>
-                      <a href="#" class="flex rounded-full hover:bg-blue-700 h-10 w-10">
-                        <i class="mdi mdi-twitter text-blue-400 mx-auto mt-2"></i>
-                      </a>
-                      <a href="#" class="flex rounded-full hover:bg-orange-700 h-10 w-10">
-                        <i class="mdi mdi-instagram text-orange-400 mx-auto mt-2"></i>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </SwiperSlide>
-
-              <SwiperSlide>
-                <div class="flex flex-col">
-                  <a href="#" class="mx-auto">
-                    <img
-                      class="rounded-2xl drop-shadow-md hover:drop-shadow-xl transition-all duration-200 delay-100 w-64 h-64 object-cover"
-                      src="/Team/Ashika Gupta.png"
-                      alt="Team Member"
-                    />
-                  </a>
-                  <div class="text-center mt-6">
-                    <h1 class="text-white text-xl font-bold mb-1">Ashika Gupta</h1>
-                    <div class="text-gray-400 font-light mb-2">UI/UX team</div>
-                    <div class="flex items-center justify-center opacity-50 hover:opacity-100 transition-opacity duration-300">
-                      <a href="#" class="flex rounded-full hover:bg-indigo-700 h-10 w-10">
-                        <i class="mdi mdi-linkedin text-indigo-700 mx-auto mt-2"></i>
-                      </a>
-                      <a href="#" class="flex rounded-full hover:bg-blue-700 h-10 w-10">
-                        <i class="mdi mdi-twitter text-blue-400 mx-auto mt-2"></i>
-                      </a>
-                      <a href="#" class="flex rounded-full hover:bg-orange-700 h-10 w-10">
-                        <i class="mdi mdi-instagram text-orange-400 mx-auto mt-2"></i>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </SwiperSlide>
-
-              <SwiperSlide>
-                <div class="flex flex-col">
-                  <a href="#" class="mx-auto">
-                    <img
-                      class="rounded-2xl drop-shadow-md hover:drop-shadow-xl transition-all duration-200 delay-100 w-64 h-64 object-cover"
-                      src="/Team/Kusum Kharayat.jpg"
-                      alt="Team Member"
-                    />
-                  </a>
-                  <div class="text-center mt-6">
-                    <h1 class="text-white text-xl font-bold mb-1">Kusum Kharayat</h1>
-                    <div class="text-gray-400 font-light mb-2">Community advocate</div>
-                    <div class="flex items-center justify-center opacity-50 hover:opacity-100 transition-opacity duration-300">
-                      <a href="#" class="flex rounded-full hover:bg-indigo-700 h-10 w-10">
-                        <i class="mdi mdi-linkedin text-indigo-700 mx-auto mt-2"></i>
-                      </a>
-                      <a href="#" class="flex rounded-full hover:bg-blue-700 h-10 w-10">
-                        <i class="mdi mdi-twitter text-blue-400 mx-auto mt-2"></i>
-                      </a>
-                      <a href="#" class="flex rounded-full hover:bg-orange-700 h-10 w-10">
-                        <i class="mdi mdi-instagram text-orange-400 mx-auto mt-2"></i>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </SwiperSlide>
-
-              <SwiperSlide>
-                <div class="flex flex-col">
-                  <a href="#" class="mx-auto">
-                    <img
-                      class="rounded-2xl drop-shadow-md hover:drop-shadow-xl transition-all duration-200 delay-100 w-64 h-64 object-cover"
-                      src="/Team/YASHDEEP SINGH.jpg"
-                      alt="Team Member"
-                    />
-                  </a>
-                  <div class="text-center mt-6">
-                    <h1 class="text-white text-xl font-bold mb-1">Yashdeep Singh</h1>
-                    <div class="text-gray-400 font-light mb-2">Social media</div>
-                    <div class="flex items-center justify-center opacity-50 hover:opacity-100 transition-opacity duration-300">
-                      <a href="#" class="flex rounded-full hover:bg-indigo-700 h-10 w-10">
-                        <i class="mdi mdi-linkedin text-indigo-700 mx-auto mt-2"></i>
-                      </a>
-                      <a href="#" class="flex rounded-full hover:bg-blue-700 h-10 w-10">
-                        <i class="mdi mdi-twitter text-blue-400 mx-auto mt-2"></i>
-                      </a>
-                      <a href="#" class="flex rounded-full hover:bg-orange-700 h-10 w-10">
-                        <i class="mdi mdi-instagram text-orange-400 mx-auto mt-2"></i>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </SwiperSlide>
-
-              <SwiperSlide>
-                <div class="flex flex-col">
-                  <a href="#" class="mx-auto">
-                    <img
-                      class="rounded-2xl drop-shadow-md hover:drop-shadow-xl transition-all duration-200 delay-100 w-64 h-64 object-cover"
-                      src="/Team/vanshika goel.jpeg"
-                      alt="Team Member"
-                    />
-                  </a>
-                  <div class="text-center mt-6">
-                    <h1 class="text-white text-xl font-bold mb-1">Vanshika Goel</h1>
-                    <div class="text-gray-400 font-light mb-2">PR and social media</div>
-                    <div class="flex items-center justify-center opacity-50 hover:opacity-100 transition-opacity duration-300">
-                      <a href="#" class="flex rounded-full hover:bg-indigo-700 h-10 w-10">
-                        <i class="mdi mdi-linkedin text-indigo-700 mx-auto mt-2"></i>
-                      </a>
-                      <a href="#" class="flex rounded-full hover:bg-blue-700 h-10 w-10">
-                        <i class="mdi mdi-twitter text-blue-400 mx-auto mt-2"></i>
-                      </a>
-                      <a href="#" class="flex rounded-full hover:bg-orange-700 h-10 w-10">
-                        <i class="mdi mdi-instagram text-orange-400 mx-auto mt-2"></i>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </SwiperSlide>
-
-
+                </SwiperSlide>
+              ))}
             </Swiper>
           </div>
         </div>
