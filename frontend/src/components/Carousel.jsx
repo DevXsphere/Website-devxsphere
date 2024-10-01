@@ -65,6 +65,7 @@
 // export default Carousel;
 import React, { useState, useEffect, useRef } from 'react';
 import './style/carousel2.css';
+import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 
 const Carousel = () => {
   const [carouselItems, setCarouselItems] = useState([
@@ -131,8 +132,8 @@ const Carousel = () => {
 
         {/* Carousel Controls */}
         <div className="arrows">
-          <button id="prev" onClick={() => showSlider('prev')}>Prev</button>
-          <button id="next" onClick={() => showSlider('next')}>Next</button>
+          <button id="prev" onClick={() => showSlider('prev')} className='opacity-60'><FaArrowLeft/></button>
+          <button id="next" onClick={() => showSlider('next')} className='opacity-60'><FaArrowRight/></button>
         </div>
       </div>
     </div>
