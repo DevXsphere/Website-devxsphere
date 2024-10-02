@@ -24,8 +24,8 @@ export default function Testimonials() {
                 className="w-16 h-16 rounded-full mb-4"
                 alt="User"
               />
-              <h5 className="mb-2 text-lg font-bold">Maria Smantha</h5>
-              <h6 className="mb-4 font-medium text-primary">Web Developer</h6>
+              <h5 className="dark:text-black mb-2 text-lg font-bold">Maria Smantha</h5>
+              <h6 className="dark:text-black mb-4 font-medium text-primary">Web Developer</h6>
               <p className="text-gray-600 text-sm">
                 "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eos id officiis hic tenetur quae quaerat ad velit ab hic."
               </p>
@@ -40,8 +40,8 @@ export default function Testimonials() {
                 className="w-16 h-16 rounded-full mb-4"
                 alt="User"
               />
-              <h5 className="mb-2 text-lg font-bold">Lisa Cudrow</h5>
-              <h6 className="mb-4 font-medium text-primary">Graphic Designer</h6>
+              <h5 className="dark:text-black mb-2 text-lg font-bold">Lisa Cudrow</h5>
+              <h6 className="dark:text-black mb-4 font-medium text-primary">Graphic Designer</h6>
               <p className="text-gray-600 text-sm">
                 "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid commodi."
               </p>
@@ -56,8 +56,8 @@ export default function Testimonials() {
                 className="w-16 h-16 rounded-full mb-4"
                 alt="User"
               />
-              <h5 className="mb-2 text-lg font-bold">John Smith</h5>
-              <h6 className="mb-4 font-medium text-primary">Marketing Specialist</h6>
+              <h5 className="dark:text-black mb-2 text-lg font-bold">John Smith</h5>
+              <h6 className="dark:text-black mb-4 font-medium text-primary">Marketing Specialist</h6>
               <p className="text-gray-600 text-sm">
                 "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti."
               </p>
@@ -72,8 +72,8 @@ export default function Testimonials() {
                 className="w-16 h-16 rounded-full mb-4"
                 alt="User"
               />
-              <h5 className="mb-2 text-lg font-bold">Anna Lee</h5>
-              <h6 className="mb-4 font-medium text-primary">Project Manager</h6>
+              <h5 className="dark:text-black mb-2 text-lg font-bold">Anna Lee</h5>
+              <h6 className="dark:text-black mb-4 font-medium text-primary">Project Manager</h6>
               <p className="text-gray-600 text-sm">
                 "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
               </p>

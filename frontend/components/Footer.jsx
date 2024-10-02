@@ -3,7 +3,7 @@ import { IconBrandLinkedin, IconBrandFacebook, IconBrandX, IconBrandInstagram, I
 
 export default function Footer() {
   return (
-    <footer className="bg-black text-white py-8">
+    <footer className="dark:bg-black  py-8">
       <div className="container mx-auto flex justify-between items-center">
         
         {/* Social Media Section */}
@@ -12,32 +12,32 @@ export default function Footer() {
 
           {/* LinkedIn */}
           <a href="https://www.linkedin.com/company/DevXsphere" target="_blank" rel="noopener noreferrer">
-            <IconBrandLinkedin className="text-white hover:text-gray-300 cursor-pointer" size={30} />
+            <IconBrandLinkedin className=" hover:text-gray-300 cursor-pointer" size={30} />
           </a>
 
           {/* Facebook */}
           <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
-            <IconBrandFacebook className="text-white hover:text-gray-300 cursor-pointer" size={30} />
+            <IconBrandFacebook className=" hover:text-gray-300 cursor-pointer" size={30} />
           </a>
 
           {/* X (Twitter) */}
           <a href="https://x.com/DevXsphere" target="_blank" rel="noopener noreferrer">
-            <IconBrandX className="text-white hover:text-gray-300 cursor-pointer" size={30} />
+            <IconBrandX className=" hover:text-gray-300 cursor-pointer" size={30} />
           </a>
 
           {/* Instagram */}
           <a href="https://www.instagram.com/devXsphere/" target="_blank" rel="noopener noreferrer">
-            <IconBrandInstagram className="text-white hover:text-gray-300 cursor-pointer" size={30} />
+            <IconBrandInstagram className=" hover:text-gray-300 cursor-pointer" size={30} />
           </a>
 
           {/* Mastodon */}
           <a href="https://mastodon.social" target="_blank" rel="noopener noreferrer">
-            <IconBrandMastodon className="text-white hover:text-gray-300 cursor-pointer" size={30} />
+            <IconBrandMastodon className=" hover:text-gray-300 cursor-pointer" size={30} />
           </a>
 
           {/* Zulip */}
           <a href="https://zulip.com" target="_blank" rel="noopener noreferrer">
-            <IconBrandZulip className="text-white hover:text-gray-300 cursor-pointer" size={30} />
+            <IconBrandZulip className=" hover:text-gray-300 cursor-pointer" size={30} />
           </a>
         </div>
 
@@ -48,7 +48,7 @@ export default function Footer() {
 
         {/* Copyright Section */}
         <div>
-          <p className="text-white">Copyright © 2024 devxsphere</p>
+          <p >Copyright © 2024 devxsphere</p>
         </div>
 
       </div>

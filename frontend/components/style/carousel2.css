@@ -1,10 +1,18 @@
 /* carousel.css */
 
+
 .carousel-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 80px; /* Pushes the carousel down a bit */
+    padding-top: 80px; /* Pushes the carousel down a bit */
+  }
+  .toggle{
+    position: absolute;
+    display: block;
+    color: white;
+    right: 20px;
+    top: 50px;
   }
   
   .title-container {
@@ -16,7 +24,7 @@
     font-family: 'Poppins', sans-serif; /* A clean font, feel free to use another */
     font-size: 3rem;
     font-weight: bold;
-    color: white;
+    /* color: white; */
     display: inline-flex;
     align-items: center;
   }
