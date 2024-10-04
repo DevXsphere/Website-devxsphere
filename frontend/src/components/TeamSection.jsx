@@ -97,9 +97,9 @@ export default function TeamSection() {
   ]
 
   return (
-    <div class="flex flex-col w-full my-12 px-4 md:px-12 lg:px-24"> {/* Changed background to dark */}
+    <div class="flex flex-col w-full my-12 px-4 md:px-12 lg:px-24" > {/* Changed background to dark */}
       {/* <div class="flex flex-col"> */}
-        <div class="flex flex-col mt-8">
+        <div class="flex flex-col mt-8" id="team">
           <div class="container max-w-7xl px-4">
             <div class="flex flex-wrap justify-center text-center mb-24">
               <div class="w-full lg:w-6/12 px-4">
