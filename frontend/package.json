@@ -35,5 +35,9 @@
     "postcss": "^8.4.45",
     "tailwindcss": "^3.4.10",
     "vite": "^5.4.8"
-  }
+  },
+  "description": "Welcome to our website that is built around **open source, communities, and contribution**! This platform is designed to bring together like-minded individuals through meetups, tech events, and a variety of open source resources.",
+  "main": "postcss.config.js",
+  "author": "",
+  "license": "ISC"
 }
