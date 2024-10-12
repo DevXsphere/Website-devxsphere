@@ -27,7 +27,7 @@ const Events = () => {
       <div className="w-fit text-white bg-black px-4 py-2 rounded-full mx-auto font-semibold sm:my-2">
         Stay Connected with Our
       </div>
-      <div className="text-3xl md:text-4xl text-white lg:text-6xl text-center font-semibold mb-4 md:mb-6">
+      <div className="text-2xl md:text-4xl text-white lg:text-5xl text-center font-semibold mb-4 md:mb-6">
         Upcoming Events
       </div>
       <div className="text-gray-400 text-center text-sm md:text-xl lg:text-2xl lg:py-2 font-medium mx-auto">
