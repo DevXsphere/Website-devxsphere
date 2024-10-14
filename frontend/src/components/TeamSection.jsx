@@ -339,7 +339,7 @@ export default function TeamSection() {
   return (
     <div className="flex flex-col w-full my-12 px-4 md:px-12 lg:px-24">
       <div className="flex flex-col">
-        <div className="flex flex-col mt-8">
+        <div className="flex flex-col justify-center items-center mt-8">
           <div className="container max-w-7xl px-4">
             <div className="flex flex-wrap justify-center text-center mb-24">
               <div className="w-full lg:w-6/12 px-4">
