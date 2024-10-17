@@ -7,30 +7,36 @@ export default function Footer() {
   const socialMedias = [
     {
       link: "https://www.linkedin.com/company/DevXsphere",
-      // icon: <FaLinkedinIn className="size-8 md:size-10 xl:size-12" />,
       icon: <FaLinkedinIn className="size-8 md:size-8 xl:size-10" />,
+      className: " text-white hover:bg-blue-600 rounded-full p-2 transition-all duration-300 ease-in-out transform hover:scale-110"
     },
     {
       link: "https://www.facebook.com",
       icon: <FaFacebookF className="size-8 md:size-8 xl:size-10" />,
+      className: " text-white hover:bg-blue-500 rounded-full p-2 transition-all duration-300 ease-in-out transform hover:scale-110"
     },
     {
       link: "https://x.com/DevXsphere",
       icon: <FaXTwitter className="size-8 md:size-8 xl:size-10" />,
+      className: " text-white hover:bg-gray-800 rounded-full p-2 transition-all duration-300 ease-in-out transform hover:scale-110"
     },
     {
       link: "https://www.instagram.com/devXsphere/",
       icon: <FaInstagram className="size-8 md:size-8 xl:size-10" />,
+      className: " text-white hover:bg-gradient-to-r from-yellow-500 via-pink-500 to-purple-600 rounded-full p-2 transition-all duration-300 ease-in-out transform hover:scale-110"
     },
     {
       link: "https://mastodon.social",
       icon: <TbBrandMastodon className="size-8 md:size-8 xl:size-10" />,
+      className: " text-white hover:bg-purple-600 rounded-full p-2 transition-all duration-300 ease-in-out transform hover:scale-110"
     },
     {
       link: "https://zulip.com",
       icon: <TbBrandZulip className="size-8 md:size-8 xl:size-10" />,
+      className: " text-white hover:bg-green-600 rounded-full p-2 transition-all duration-300 ease-in-out transform hover:scale-110"
     },
   ];
+  
 
   return (
     <footer className="bg-black text-white pt-8 pb-24">
@@ -46,7 +52,7 @@ export default function Footer() {
                   href={socialMedia.link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-white hover:text-orange-500 transition-all duration-300 ease-in-out transform hover:scale-110"
+                  className={socialMedia.className}
                 >
                   {socialMedia.icon}
                 </a>
