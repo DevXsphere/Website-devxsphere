@@ -376,21 +376,21 @@ export default function TeamSection() {
                         <div className="flex items-center justify-center opacity-50 hover:opacity-100 transition-opacity duration-300">
                           <a
                             href={member.links.linkedIn}
-                            className="flex rounded-full hover:bg-indigo-700 h-8 w-8 mx-1"
+                            className= " text-white hover:bg-blue-600 rounded-full px-1 transition-all duration-300 ease-in-out transform "
                           >
-                            <i className="mdi mdi-linkedin text-indigo-400 mx-auto mt-2"></i>
+                            <i className="mdi mdi-linkedin hover:text-white text-indigo-400 mx-auto mt-2"></i>
                           </a>
                           <a
                             href={member.links.twitter}
-                            className="flex rounded-full hover:bg-blue-700 h-8 w-8 mx-1"
+                             className=" text-white hover:bg-gray-800 rounded-full px-1 transition-all duration-300 ease-in-out transform hover:scale-100"
                           >
-                            <i className="mdi mdi-twitter text-blue-300 mx-auto mt-2"></i>
+                            <i className="mdi mdi-twitter  text-blue-300 mx-auto mt-2"></i>
                           </a>
                           <a
                             href={member.links.instagram}
-                            className="flex rounded-full hover:bg-orange-700 h-8 w-8 mx-1"
+                             className= " text-white hover:bg-gradient-to-r from-yellow-500 via-pink-500 to-purple-600 rounded-full px-1 transition-all duration-300 ease-in-out transform hover:scale-100"
                           >
-                            <i className="mdi mdi-instagram text-orange-400 mx-auto mt-2"></i>
+                            <i className="mdi mdi-instagram hover:text-white text-orange-400 mx-auto mt-2"></i>
                           </a>
                         </div>
                       </div>
