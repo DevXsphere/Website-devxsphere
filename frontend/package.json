@@ -19,6 +19,10 @@
     "react-icons": "^5.3.0",
     "react-modal-sheet": "^2.2.0",
     "react-responsive": "^10.0.0",
+    "react-slick": "^0.30.2",
+    "slick": "^1.12.2",
+    "slick-carousel": "^1.8.1",
+    "slider": "^1.0.4",
     "swiper": "^11.1.14",
     "three": "^0.168.0"
   },
@@ -35,5 +39,9 @@
     "postcss": "^8.4.45",
     "tailwindcss": "^3.4.10",
     "vite": "^5.4.8"
-  }
+  },
+  "description": "Welcome to our website that is built around **open source, communities, and contribution**! This platform is designed to bring together like-minded individuals through meetups, tech events, and a variety of open source resources.",
+  "main": "postcss.config.js",
+  "author": "",
+  "license": "ISC"
 }
