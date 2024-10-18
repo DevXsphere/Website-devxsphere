@@ -39,7 +39,7 @@ export default function Footer() {
   
 
   return (
-    <footer className="bg-black text-white pt-8 pb-24">
+    <footer className="bg-black text-white pt-8 pb-24" id="join-us">
       <div className="container mx-auto flex flex-col md:flex-row justify-between items-center">
         {/* Social Media Section */}
         <div className="my-3">
