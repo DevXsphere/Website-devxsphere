@@ -85,18 +85,13 @@ Once your PR is reviewed and merged, your contribution will be added to the repo
 
 ---
 
-## 💬 Join the Conversation
-
-Join us on our [Discord Channel](https://discord.com/invite/PSercx8R2X) to discuss contributions, ask questions, and collaborate with fellow developers. We’d love to hear from you!
-
----
 
 ## 📈 Contributors
 
 Thanks to all the wonderful contributors who have helped make this repository better! 🙌
 
-<a href="https://github.com/Data-Science-and-Deep-Learning-Club/awesome-python-projects/graphs/contributors">
-   <img src="https://contrib.rocks/image?repo=Data-Science-and-Deep-Learning-Club/awesome-python-projects" />
+<a href="https://github.com/DevXsphere/Website-devxsphere/graphs/contributors">
+   <img src="https://contrib.rocks/image?repo=DevXsphere/Website-devxsphere" />
 </a>
 
 ---
