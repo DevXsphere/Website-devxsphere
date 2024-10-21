@@ -1,12 +1,16 @@
 import React, { useState } from "react";
 import Sheet from "react-modal-sheet";
-import './style/Navbar.css';
+import "./style/Navbar.css";
 export default function Navbar() {
   const [spanStyle, setSpanStyle] = useState({ left: "0px", width: "95px" });
   const widthMapping = [95, 94, 110, 115, 110];
   const handleHover = (index) => {
-    const leftPosition = index === 0 ? 0 : widthMapping.slice(0, index).reduce((a, b) => a + b, 0);
-    setSpanStyle({ left: `${leftPosition}px`, width: `${widthMapping[index]}px` });
+    const leftPosition =
+      index === 0 ? 0 : widthMapping.slice(0, index).reduce((a, b) => a + b, 0);
+    setSpanStyle({
+      left: `${leftPosition}px`,
+      width: `${widthMapping[index]}px`,
+    });
   };
   return (
     <div className="relative z-50">

@@ -361,7 +361,7 @@ export default function TeamSection() {
                     <div className="flex flex-col items-center">
                       <a href="#" className="mx-auto flex justify-center">
                         <img
-                          className="rounded-2xl drop-shadow-md hover:drop-shadow-xl transition-all duration-200 delay-100 w-56 h-56 object-cover"
+                          className="rounded-2xl drop-shadow-lg hover:drop-shadow-xl hover:scale-110 transition-all duration-200 delay-100 w-56 h-56 object-cover"
                           src={member.pfpImg}
                           alt={member.name}
                         />
@@ -376,19 +376,19 @@ export default function TeamSection() {
                         <div className="flex items-center justify-center opacity-50 hover:opacity-100 transition-opacity duration-300">
                           <a
                             href={member.links.linkedIn}
-                            className= " text-white hover:bg-blue-600 rounded-full px-1 transition-all duration-300 ease-in-out transform "
+                            className=" text-white hover:bg-blue-600 rounded-full px-1 transition-all duration-300 ease-in-out transform "
                           >
                             <i className="mdi mdi-linkedin hover:text-white text-indigo-400 mx-auto mt-2"></i>
                           </a>
                           <a
                             href={member.links.twitter}
-                             className=" text-white hover:bg-gray-800 rounded-full px-1 transition-all duration-300 ease-in-out transform hover:scale-100"
+                            className=" text-white hover:bg-gray-800 rounded-full px-1 transition-all duration-300 ease-in-out transform hover:scale-100"
                           >
                             <i className="mdi mdi-twitter  text-blue-300 mx-auto mt-2"></i>
                           </a>
                           <a
                             href={member.links.instagram}
-                             className= " text-white hover:bg-gradient-to-r from-yellow-500 via-pink-500 to-purple-600 rounded-full px-1 transition-all duration-300 ease-in-out transform hover:scale-100"
+                            className=" text-white hover:bg-gradient-to-r from-yellow-500 via-pink-500 to-purple-600 rounded-full px-1 transition-all duration-300 ease-in-out transform hover:scale-100"
                           >
                             <i className="mdi mdi-instagram hover:text-white text-orange-400 mx-auto mt-2"></i>
                           </a>
