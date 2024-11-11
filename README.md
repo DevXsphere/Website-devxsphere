@@ -1,4 +1,42 @@
-Welcome🙏🏼 to the **Website** repo of devXsphere.
+<div id="top"></div>
+
+<h1 align="center"> devXsphere Community Website </h1>
+
+<!-- ---------------------------------------------------------------------------------------------------------------------- -->
+
+<div align="center">
+
+![GitHub stars](https://img.shields.io/github/stars/DevXsphere/Website-devxsphere?)
+![GitHub forks](https://img.shields.io/github/forks/DevXsphere/Website-devxsphere?)
+![GitHub watchers](https://img.shields.io/github/watchers/DevXsphere/Website-devxsphere?)
+
+![Repo. Size](https://img.shields.io/github/repo-size/DevXsphere/Website-devxsphere?)
+![GitHub Maintained](https://img.shields.io/badge/Maintained%3F-yes-brightgreen.svg?)
+![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?)
+![GitHub contributors](https://img.shields.io/github/contributors/DevXsphere/Website-devxsphere?)
+![GitHub Closed issues](https://img.shields.io/github/issues-closed-raw/DevXsphere/Website-devxsphere?)
+![GitHub PR Open](https://img.shields.io/github/issues-pr/DevXsphere/Website-devxsphere?)
+![GitHub PR closed](https://img.shields.io/github/issues-pr-closed-raw/DevXsphere/Website-devxsphere?)
+![GitHub language count](https://img.shields.io/github/languages/count/DevXsphere/Website-devxsphere?)
+![GitHub top language](https://img.shields.io/github/languages/top/DevXsphere/Website-devxsphere?)
+![GitHub last commit](https://img.shields.io/github/last-commit/DevXsphere/Website-devxsphere?)
+
+</div>
+
+<!-- ---------------------------------------------------------------------------------------------------------------------- -->
+
+<p align="center">
+ <strong> The official website of devXsphere Community and Organization </strong>
+   <br>
+  <br />
+    <strong> <a href="https://devxsphere.vercel.app/">Visit the Official Website » </strong></a> 
+    <br />
+    <a href="https://github.com/DevXsphere/Website-devxsphere/issues/new?assignees=&labels=bug%2CPriority-High%2Cwant+fix%2CReview+Required&template=bug_report.yml&title=%5BBug%5D%3A+">Report Bug</a>
+    ·
+    <a href="https://github.com/DevXsphere/Website-devxsphere/issues/new?assignees=&labels=documentation%2Cenhancement%2Cgood+first+issue&template=doc_report.yml&title=%5BDoc%5D%3A+">Documentation Request</a>
+	.
+	<a href="https://github.com/DevXsphere/Website-devxsphere/issues/new?assignees=&labels=feature%2CReview+Required&template=feature_request.yml&title=%5BFeature%5D%3A+">Feature Request</a>
+  </p>
 
 ## 📚 Step-by-Step Contribution Guide
 
@@ -93,6 +131,14 @@ Thanks to all the wonderful contributors who have helped make this repository be
 <a href="https://github.com/DevXsphere/Website-devxsphere/graphs/contributors">
    <img src="https://contrib.rocks/image?repo=DevXsphere/Website-devxsphere" />
 </a>
+
+<div align="center">
+<h3>Show some ❤️ by starring this awesome repository!</h3>
+</div>
+
+### [![Typing SVG](https://readme-typing-svg.herokuapp.com/?lines=Thanks+for+contributing!;&size=30;align=center)](https://git.io/typing-svg)
+
+<div id="Bottom"></div>
 
 ---
 
