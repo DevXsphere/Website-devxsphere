@@ -1,51 +1,55 @@
-@media(max-width:768px) {
-
-    .navbar {
-      flex-direction: column; 
-      bottom: auto;
-      top: 10vh; 
-      left:8%;
-      width:117px; 
-      background-color:#4F46E5;
-      height: 252px;
-      gap: 15px;
-      border-radius: 10px;
-
-    }
-
-     .navbar-item {
-      margin-top: 6px;
-      padding-left: 24px;
-      padding-top: 5px;
-      position:relative;
-      width:100%;
-      background-color:#4F46E5;
-      border-radius: 6px;
-    }
-     .navbar-item:hover{
-        padding-left: 24px;
-        padding-top: 5px;
-        background:linear-gradient( to right,#222,#BC3482);
-        border-radius: 6px;
-     }
-    .navbar span {
-      left: 0; 
-      top: 0; 
-      width:0px; 
-      position: relative;
-      height: 0%;
-    }
+/* for smaller screens (max-width: 300px) */
+@media (max-width: 300px) {
+  .navbar {
+    z-index: 999; 
+    width: 70%; 
+    bottom: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #4F46E5;
+    border-radius: 8px;
   }
-  @media (min-width: 768px){
-    .navbar span{
-        position: absolute;
-        height: 100%;
-    }
-    .navbar{
-        justify-content: center;
-        align-items:center;
-        width:524px;
-        height:50px;
-        left:50%;
-    }
+
+  .navbar-item {
+    z-index: 999; 
+    font-size: 8px; 
+    padding: 2px 3px;
   }
+
+  .navbar-item:hover {
+    background: linear-gradient(to right, #222, #BC3482);
+    padding-left: 6px; 
+  }
+
+  .navbar span {
+    z-index: 100; 
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 0%;
+    position: absolute;
+    transition: all 0.3s ease;
+  }
+}
+
+@media (min-width: 300px) {
+  .navbar {
+    z-index: 999;
+    justify-content: center;
+    align-items: center;
+    width: 524px;
+    height: 50px;
+    left: 50%;
+  }
+
+  .navbar-item {
+    z-index: 999; 
+  }
+
+  .navbar span {
+    z-index: 100; 
+    position: absolute;
+    height: 100%;
+    transition: all 0.5s ease;
+  }
+}
