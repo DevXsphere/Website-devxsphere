@@ -23,7 +23,7 @@ const Events = () => {
     },
   ];
   return (
-    <div className="flex flex-col w-full my-12 px-4 md:px-12 lg:px-24">
+    <div className="flex flex-col w-full my-12 px-4 md:px-12 lg:px-24" id="event">
       <div className="w-fit text-white bg-black px-4 py-2 rounded-full mx-auto font-semibold sm:my-2">
         Stay Connected with Our
       </div>
