@@ -63,16 +63,40 @@
 // };
 
 // export default Carousel;
-import React, { useState, useEffect, useRef } from 'react';
-import './style/carousel2.css';
+import React, { useState, useEffect, useRef } from "react";
+import "./style/carousel2.css";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 
 const Carousel = () => {
   const [carouselItems, setCarouselItems] = useState([
-    { id: 1, image: '../image/event.JPG', author: '', title: 'devXsphere gaianet', topic: 'meetup' },
-    { id: 2, image: '../image/event 2.JPG', author: 'Author 2', title: 'Title 2', topic: 'Topic 2' },
-    { id: 3, image: '../image/event 3.JPG', author: 'Author 3', title: 'Title 3', topic: 'Topic 3' },
-    { id: 4, image: '../image/event4.jpg', author: 'Author 4', title: 'Title 4', topic: 'Topic 4' }
+    {
+      id: 1,
+      image: "../image/event.JPG",
+      author: "",
+      title: "devXsphere gaianet",
+      topic: "meetup",
+    },
+    {
+      id: 2,
+      image: "../image/event 2.JPG",
+      author: "Author 2",
+      title: "Title 2",
+      topic: "Topic 2",
+    },
+    {
+      id: 3,
+      image: "../image/event 3.JPG",
+      author: "Author 3",
+      title: "Title 3",
+      topic: "Topic 3",
+    },
+    {
+      id: 4,
+      image: "../image/event4.jpg",
+      author: "Author 4",
+      title: "Title 4",
+      topic: "Topic 4",
+    },
   ]);
 
   const timeRunning = 1000;
@@ -83,25 +107,28 @@ const Carousel = () => {
 
   useEffect(() => {
     const runNextAuto = setTimeout(() => {
-      showSlider('next');
+      showSlider("next");
     }, timeAutoNext);
 
     return () => clearTimeout(runNextAuto);
   }, [carouselItems]);
 
   const showSlider = (type) => {
-    if (type === 'next') {
+    if (type === "next") {
       setCarouselItems((prevItems) => [...prevItems.slice(1), prevItems[0]]);
-      carouselRef.current.classList.add('next');
+      carouselRef.current.classList.add("next");
     } else {
-      setCarouselItems((prevItems) => [prevItems[prevItems.length - 1], ...prevItems.slice(0, -1)]);
-      carouselRef.current.classList.add('prev');
+      setCarouselItems((prevItems) => [
+        prevItems[prevItems.length - 1],
+        ...prevItems.slice(0, -1),
+      ]);
+      carouselRef.current.classList.add("prev");
     }
 
     clearTimeout(timeRef.current);
     timeRef.current = setTimeout(() => {
-      carouselRef.current.classList.remove('next');
-      carouselRef.current.classList.remove('prev');
+      carouselRef.current.classList.remove("next");
+      carouselRef.current.classList.remove("prev");
     }, timeRunning);
   };
 
@@ -132,8 +159,20 @@ const Carousel = () => {
 
         {/* Carousel Controls */}
         <div className="arrows">
-          <button id="prev" onClick={() => showSlider('prev')} className='opacity-60'><FaArrowLeft/></button>
-          <button id="next" onClick={() => showSlider('next')} className='opacity-60'><FaArrowRight/></button>
+          <button
+            id="prev"
+            onClick={() => showSlider("prev")}
+            className="opacity-60"
+          >
+            <FaArrowLeft />
+          </button>
+          <button
+            id="next"
+            onClick={() => showSlider("next")}
+            className="opacity-60"
+          >
+            <FaArrowRight />
+          </button>
         </div>
       </div>
     </div>

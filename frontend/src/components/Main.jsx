@@ -18,7 +18,8 @@ function Main() {
             Welcome to DevXsphere
           </h1>
           <p className="mt-6 text-lg leading-8 text-white font-bold">
-            A vibrant community of developers, tech enthusiasts in Delhi, fostering open-source values, knowledge sharing,and collaboration.
+            A vibrant community of developers, tech enthusiasts in Delhi,
+            fostering open-source values, knowledge sharing,and collaboration.
           </p>
           <div className="mt-10 flex items-center justify-center gap-x-6">
             <a
@@ -27,10 +28,7 @@ function Main() {
             >
               Explore Events
             </a>
-            <a
-              href="#"
-              className="text-sm font-semibold leading-6 text-white"
-            >
+            <a href="#" className="text-sm font-semibold leading-6 text-white">
               Discover Resources <span aria-hidden="true">→</span>
             </a>
           </div>
