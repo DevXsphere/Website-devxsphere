@@ -1,0 +1,38 @@
+
+{
+  "glyphs": {},
+  "familyName": "helvetiker",
+  "ascender": 1189,
+  "descender": -272,
+  "underlinePosition": -100,
+  "underlineThickness": 50,
+  "boundingBox": {
+    "yMin": -272,
+    "xMin": -111,
+    "yMax": 1189,
+    "xMax": 1672
+  },
+  "resolution": 1000,
+  "original_font_information": {
+    "format": 0,
+    "copyright": "",
+    "fontFamily": "Helvetiker",
+    "fontSubfamily": "Regular",
+    "uniqueFontIdentifier": "",
+    "fullFontName": "Helvetiker",
+    "version": "Version 1.0",
+    "postScriptName": "Helvetiker",
+    "trademark": "",
+    "manufacturer": "",
+    "designer": "",
+    "description": "",
+    "manufacturerURL": "",
+    "designerURL": "",
+    "licence": "",
+    "licenceURL": "",
+    "preferredFamily": "",
+    "preferredSubfamily": "",
+    "compatibleFullName": "",
+    "sampleText": ""
+  }
+}
