@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from 'react';
 import { useTheme } from '@/contexts/ThemeContext';
 
@@ -8,7 +7,6 @@ const navItems = [
   { name: 'Events', id: 'events' },
   { name: 'Stats', id: 'stats' },
   { name: 'Team', id: 'team' },
-  { name: 'Testimonials', id: 'testimonials' },
   { name: 'Contribute', id: 'contribute' },
 ];
 
@@ -65,6 +63,15 @@ const Navbar = () => {
             {name}
           </button>
         ))}
+
+        {/* Blog page navigation */}
+        <button
+          onClick={() => window.location.pathname = "/blog"}
+          className="font-bold px-4 py-2 rounded-full outline-none transition-all text-gray-700 dark:text-gray-200 hover:bg-accent-200/40 dark:hover:bg-accent-700/40 ml-2"
+          style={{ fontFamily: "var(--font-display, Inter, sans-serif)" }}
+        >
+          Blog
+        </button>
 
         <button
           onClick={toggleTheme}
